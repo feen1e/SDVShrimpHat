@@ -1,8 +1,8 @@
-# Shrimp Hat mod
-Adds a shrimp hat.
+# Shrimp Hat mod 🦐🦐🦐
+Adds a shrimp hat. Available at Hat Mouse's shop for 659 gold.
 Requires SMAPI and Content Patcher
 
-**Made by Feenie and [BlackBerryPancake](https://www.instagram.com/black_berry_pancake/)**
+**Made by Feenie and [BlackBerryPancake](https://www.instagram.com/black_berry_pancake/) 🦐**
 
 ## Previews
 ![Preview](https://github.com/user-attachments/assets/74627681-b21b-42eb-8257-688e224eec3f)
