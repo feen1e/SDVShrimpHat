@@ -1,0 +1,33 @@
+{
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Hats",
+            "Entries": {
+                "feen1e.ShrimpHat_ShrimpHat": "Shrimp Hat/Shrimpy Shrimp right on your head./false/true//Shrimp Hat/0/Mods\\feen1e.ShrimpHat\\ShrimpHat"
+            }
+        },
+        {
+            "Action": "Load",
+			"Target": "Mods/feen1e.ShrimpHat/ShrimpHat, Mods/feen1e.ShrimpHat/ShrimpHat",
+			"FromFile": "assets/ShrimpHat.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "HatMouse",
+                "Items"
+            ],
+            "Entries": {
+                "feen1e.ShrimpHat_ShrimpHat": {
+                    "Id": "feen1e.ShrimpHat_ShrimpHat",
+                    "ItemId": "feen1e.ShrimpHat_ShrimpHat",
+                    "Price": "659",
+                    "AvailableStock": -1
+                }
+            }
+        }
+    ]
+}
