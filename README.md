@@ -1,5 +1,6 @@
 # Shrimp Hat mod
-Adds a shrimp hat
+Adds a shrimp hat.
+Requires SMAPI and Content Patcher
 
 **Made by Feenie and [BlackBerryPancake](https://www.instagram.com/black_berry_pancake/)**
 
