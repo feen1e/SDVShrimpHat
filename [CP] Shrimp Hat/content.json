@@ -5,13 +5,13 @@
             "Action": "EditData",
             "Target": "Data/Hats",
             "Entries": {
-                "feen1e.ShrimpHat_ShrimpHat": "Shrimp Hat/Shrimpy Shrimp right on your head./false/true//Shrimp Hat/0/Mods\\feen1e.ShrimpHat\\ShrimpHat"
+                "feen1e.ShrimpHat_ShrimpHat": "Shrimp Hat/{{i18n:ShrimpHat.Description}}/false/true//{{i18n:ShrimpHat.Name}}/0/Mods\\feen1e.ShrimpHat\\ShrimpHat"
             }
         },
         {
             "Action": "Load",
-			"Target": "Mods/feen1e.ShrimpHat/ShrimpHat, Mods/feen1e.ShrimpHat/ShrimpHat",
-			"FromFile": "assets/ShrimpHat.png"
+			"Target": "Mods/feen1e.ShrimpHat/ShrimpHat",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
         },
         {
             "Action": "EditData",
