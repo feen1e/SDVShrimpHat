@@ -1,0 +1,33 @@
+{
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Hats",
+            "Entries": {
+                "feen1e.ShrimpHat_ShrimpHat": "Shrimp Hat/{{i18n:ShrimpHat.Description}}/false/true//{{i18n:ShrimpHat.Name}}/0/Mods\\feen1e.ShrimpHat\\ShrimpHat"
+            }
+        },
+        {
+            "Action": "Load",
+			"Target": "Mods/feen1e.ShrimpHat/ShrimpHat",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "HatMouse",
+                "Items"
+            ],
+            "Entries": {
+                "feen1e.ShrimpHat_ShrimpHat": {
+                    "Id": "feen1e.ShrimpHat_ShrimpHat",
+                    "ItemId": "feen1e.ShrimpHat_ShrimpHat",
+                    "Price": "659",
+                    "AvailableStock": -1
+                }
+            }
+        }
+    ]
+}
