@@ -1,8 +1,11 @@
 # Shrimp Hat mod 🦐🦐🦐
-Adds a shrimp hat. Available at Hat Mouse's shop for 659 gold.
+Adds a shrimp hat. \
+By default available at Hat Mouse's shop for 659 gold but price and shop can be adjusted in config. \
 Requires SMAPI and Content Patcher
 
-**Made by Feenie and [BlackBerryPancake](https://www.instagram.com/black_berry_pancake/) 🦐**
+### **Made by Feenie and [BlackBerryPancake](https://www.instagram.com/black_berry_pancake/) 🦐** 
+
+This mod is also available on [Nexus](https://www.nexusmods.com/stardewvalley/mods/30576).
 
 ## Previews
 ![Preview](https://github.com/user-attachments/assets/74627681-b21b-42eb-8257-688e224eec3f)
