@@ -1,14 +1,149 @@
 {
     "Format": "2.4.0",
+    "ConfigSchema": {
+        "Price" : {
+            "Default" : "659",
+            "Description": "Adjusts the hat's price."
+        },
+        "Shop" : {
+            "AllowValues" : "Hat Mouse, Adventurer's Guild, Blacksmith, Carpenter, Casino, Dwarf, Fish Shop, Island Trader, JojaMart, Krobus, Marnie's Ranch, Pierre's General Store, Saloon, Traveling Cart, Oasis, Dance of the Moonlight Jellies, Egg Festival, Festival of Ice, Feast of the Winter Star, Flower Dance, Luau, Night Market, Spirit's Eve, Stardew Valley Fair",
+            "Default": "Hat Mouse",
+            "Description": "Changes which shop the hat is sold at, including festival shops."
+        },
+    },
+    "DynamicTokens": [
+        {
+            "Name": "ChosenShop",
+            "Value": "HatMouse",
+            "When": { "Shop": "Hat Mouse" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "AdventureShop",
+            "When": { "Shop": "Adventurer's Guild" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Blacksmith",
+            "When": { "Shop": "Blacksmith" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Carpenter",
+            "When": { "Shop": "Carpenter" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Casino",
+            "When": { "Shop": "Casino" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Dwarf",
+            "When": { "Shop": "Dwarf" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "FishShop",
+            "When": { "Shop": "Fish Shop" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "IslandTrade",
+            "When": { "Shop": "Island Trader" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Joja",
+            "When": { "Shop": "JojaMart" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "ShadowShop",
+            "When": { "Shop": "Krobus" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "AnimalShop",
+            "When": { "Shop": "Marnie's Ranch" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "SeedShop",
+            "When": { "Shop": "Pierre's General Store" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Saloon",
+            "When": { "Shop": "Saloon" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Traveler",
+            "When": { "Shop": "Traveling Cart" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Sandy",
+            "When": { "Shop": "Oasis" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_DanceOfTheMoonlightJellies_Pierre",
+            "When": { "Shop": "Dance of the Moonlight Jellies" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_EggFestival_Pierre",
+            "When": { "Shop": "Egg Festival" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_FestivalOfIce_TravelingMerchant",
+            "When": { "Shop": "Festival of Ice" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_FeastOfTheWinterStar_Pierre",
+            "When": { "Shop": "Feast of the Winter Star" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_FlowerDance_Pierre",
+            "When": { "Shop": "Flower Dance" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_Luau_Pierre",
+            "When": { "Shop": "Luau" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_NightMarket_DecorationBoat",
+            "When": { "Shop": "Night Market" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_SpiritsEve_Pierre",
+            "When": { "Shop": "Spirit's Eve" }
+        },
+        {
+            "Name": "ChosenShop",
+            "Value": "Festival_StardewValleyFair_StarTokens",
+            "When": { "Shop": "Stardew Valley Fair" }
+        }
+    ],
     "Changes": [
         {
+            "LogName": "Adding shrimp hat data.",
             "Action": "EditData",
             "Target": "Data/Hats",
             "Entries": {
-                "feen1e.ShrimpHat_ShrimpHat": "Shrimp Hat/{{i18n:ShrimpHat.Description}}/false/true//{{i18n:ShrimpHat.Name}}/0/Mods\\feen1e.ShrimpHat\\ShrimpHat"
+                "{{ModId}}_ShrimpHat": "{{ModId}}_ShrimpHat/{{i18n:ShrimpHat.Description}}/false/true//{{i18n:ShrimpHat.Name}}/0/Mods\\feen1e.ShrimpHat\\ShrimpHat"
             }
         },
         {
+            "LogName": "Loading shrimp hat tilesheet.",
             "Action": "Load",
 			"Target": "Mods/feen1e.ShrimpHat/ShrimpHat",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
@@ -17,14 +152,14 @@
             "Action": "EditData",
             "Target": "Data/Shops",
             "TargetField": [
-                "HatMouse",
+                "{{ChosenShop}}",
                 "Items"
             ],
             "Entries": {
-                "feen1e.ShrimpHat_ShrimpHat": {
-                    "Id": "feen1e.ShrimpHat_ShrimpHat",
-                    "ItemId": "feen1e.ShrimpHat_ShrimpHat",
-                    "Price": "659",
+                "{{ModId}}_ShrimpHat": {
+                    "Id": "{{ModId}}_ShrimpHat",
+                    "ItemId": "{{ModId}}_ShrimpHat",
+                    "Price": "{{Price}}",
                     "AvailableStock": -1
                 }
             }
